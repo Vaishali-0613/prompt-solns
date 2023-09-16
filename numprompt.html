@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prompt Solns</h1>
+    <p id="demo"></p>
+    <button onclick="myFunct()">Solve</button>
+    <script>
+        function myFunct() {
+            let numb1 = parseInt(prompt("Enter a number"));
+            let numb2 = parseInt(prompt("Enter another number"));
+
+            if ( numb1 != "OK" && numb2 != "OK") {
+                let add = numb1 + numb2;
+                document.getElementById("demo").innerHTML = "Result = " + add;
+            } else {
+                let sub = numb1 - numb2;
+                document.getElementById("demo").innerHTML = "Result = " + sub;
+            }
+        }
+    </script>
+</body>
+</html>
